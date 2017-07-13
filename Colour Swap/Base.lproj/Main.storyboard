@@ -26,12 +26,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn the Alphabet!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ER-B5-eOq">
-                                <rect key="frame" x="53" y="208" width="269" height="39"/>
-                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="28"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kat and Will" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBb-bA-hTB">
                                 <rect key="frame" x="138" y="625" width="98.5" height="23.5"/>
                                 <fontDescription key="fontDescription" name="Avenir-BlackOblique" family="Avenir" pointSize="17"/>
@@ -48,15 +42,21 @@
                                     <segue destination="OC6-ML-PJd" kind="show" id="TXx-W8-tcW"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn the Alphabet!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ER-B5-eOq">
+                                <rect key="frame" x="19" y="209" width="336" height="48"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="bxn-zl-QvE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8jp-CA-giG"/>
-                            <constraint firstItem="9ER-B5-eOq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ARy-Dg-eeV"/>
                             <constraint firstItem="gBb-bA-hTB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="303" id="Fnb-qA-h0R"/>
-                            <constraint firstItem="9ER-B5-eOq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-106" id="H1c-ga-Zp9"/>
                             <constraint firstItem="gBb-bA-hTB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JSg-et-5wy"/>
+                            <constraint firstItem="9ER-B5-eOq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Uyt-5m-HOX"/>
                             <constraint firstItem="bxn-zl-QvE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="73.5" id="fTx-gz-Iki"/>
+                            <constraint firstItem="9ER-B5-eOq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100.5" id="pOG-os-OMm"/>
                         </constraints>
                     </view>
                 </viewController>
