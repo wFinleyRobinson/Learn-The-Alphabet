@@ -41,7 +41,7 @@
 		DA7F4D7E1F17C61E00272D1B /* y.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DA7F4D641F17C61E00272D1B /* y.mp3 */; };
 		DA7F4D7F1F17C61E00272D1B /* z.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DA7F4D651F17C61E00272D1B /* z.mp3 */; };
 		DAE5C4181F1556A1003C1221 /* AlphabetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5C4171F1556A1003C1221 /* AlphabetView.swift */; };
-		DAE5C41A1F158412003C1221 /* informationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5C4191F158412003C1221 /* informationView.swift */; };
+		DAE5C41A1F158412003C1221 /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE5C4191F158412003C1221 /* InformationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,7 +102,7 @@
 		DA7F4D641F17C61E00272D1B /* y.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = y.mp3; sourceTree = "<group>"; };
 		DA7F4D651F17C61E00272D1B /* z.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = z.mp3; sourceTree = "<group>"; };
 		DAE5C4171F1556A1003C1221 /* AlphabetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphabetView.swift; sourceTree = "<group>"; };
-		DAE5C4191F158412003C1221 /* informationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = informationView.swift; sourceTree = "<group>"; };
+		DAE5C4191F158412003C1221 /* InformationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +156,7 @@
 				B5036A291F14034A00ACD31C /* ViewController.swift */,
 				B5036A271F14034A00ACD31C /* AppDelegate.swift */,
 				B5036A2B1F14034A00ACD31C /* Main.storyboard */,
-				DAE5C4191F158412003C1221 /* informationView.swift */,
+				DAE5C4191F158412003C1221 /* InformationView.swift */,
 				DAE5C4171F1556A1003C1221 /* AlphabetView.swift */,
 				B5036A2E1F14034A00ACD31C /* Assets.xcassets */,
 				DA7F4D4B1F17C5CB00272D1B /* Sounds */,
@@ -379,7 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5036A2A1F14034A00ACD31C /* ViewController.swift in Sources */,
-				DAE5C41A1F158412003C1221 /* informationView.swift in Sources */,
+				DAE5C41A1F158412003C1221 /* InformationView.swift in Sources */,
 				DAE5C4181F1556A1003C1221 /* AlphabetView.swift in Sources */,
 				B5036A281F14034A00ACD31C /* AppDelegate.swift in Sources */,
 			);

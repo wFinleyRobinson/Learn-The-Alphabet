@@ -9,6 +9,7 @@
 import UIKit
 
 class AlphabetView: UIViewController {
+    
     var letterChosenCaps = ""
     var letterChosen = ""
     var exampleSentence = ""
@@ -87,7 +88,7 @@ class AlphabetView: UIViewController {
     @IBAction func onButtonPressedM(_ sender: Any) {
         letterChosen = "m"
         letterChosenCaps = "M"
-        exampleSentence = "M is for Money!"
+        exampleSentence = "M is for Monkey!"
     }
     @IBAction func onButtonPressedN(_ sender: Any) {
         letterChosen = "n"
