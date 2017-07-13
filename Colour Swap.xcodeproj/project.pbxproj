@@ -285,6 +285,7 @@
 				TargetAttributes = {
 					B5036A231F14034A00ACD31C = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 64GM4AV327;
 						ProvisioningStyle = Automatic;
 					};
 					B5036A371F14034A00ACD31C = {
@@ -534,7 +535,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 64GM4AV327;
 				INFOPLIST_FILE = "Colour Swap/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Maxine.Colour-Swap";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -546,7 +549,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 64GM4AV327;
 				INFOPLIST_FILE = "Colour Swap/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Maxine.Colour-Swap";
 				PRODUCT_NAME = "$(TARGET_NAME)";
