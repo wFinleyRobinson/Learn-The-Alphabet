@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2073" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Colour_Swap" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Digital-background" translatesAutoresizingMaskIntoConstraints="NO" id="akJ-lJ-Uhu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn the Alphabet!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ER-B5-eOq">
+                                <rect key="frame" x="52.5" y="28" width="269" height="39"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kat and Will" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBb-bA-hTB">
+                                <rect key="frame" x="138" y="625" width="98.5" height="23.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-BlackOblique" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxn-zl-QvE">
+                                <rect key="frame" x="90" y="304" width="196" height="58"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="33"/>
+                                <state key="normal" title="Tap to Begin">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="OC6-ML-PJd" kind="show" id="TXx-W8-tcW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gBb-bA-hTB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="303" id="Fnb-qA-h0R"/>
+                            <constraint firstItem="bxn-zl-QvE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gvo-Rh-AxS"/>
+                            <constraint firstItem="gBb-bA-hTB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JSg-et-5wy"/>
+                            <constraint firstItem="9ER-B5-eOq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iPN-Bl-HLZ"/>
+                            <constraint firstItem="bxn-zl-QvE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kP2-8Q-UMC"/>
+                            <constraint firstItem="9ER-B5-eOq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-286" id="zyH-yi-4lp"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-60" y="139"/>
+        </scene>
+        <!--Alphabet View-->
+        <scene sceneID="DRh-cq-ESo">
+            <objects>
+                <viewController id="OC6-ML-PJd" userLabel="Alphabet View" customClass="AlphabetView" customModule="Colour_Swap" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pJF-jK-zhC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q1f-H2-DbV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1vE-aa-TBX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Digital-background" translatesAutoresizingMaskIntoConstraints="NO" id="9mH-0Y-KTd">
+                                <rect key="frame" x="0.0" y="-2" width="375" height="671"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SOX-TB-cUG">
+                                <rect key="frame" x="70" y="129" width="30" height="36"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="A">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonPressedA:" destination="OC6-ML-PJd" eventType="touchUpInside" id="JH4-VW-Eh8"/>
+                                    <segue destination="giz-cX-dyq" kind="show" id="7aB-Ju-DVP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nVN-cW-yzP">
+                                <rect key="frame" x="70" y="164" width="30" height="36"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="B">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonPressedB:" destination="OC6-ML-PJd" eventType="touchUpInside" id="dsR-Ez-CWe"/>
+                                    <segue destination="giz-cX-dyq" kind="show" id="ecQ-WD-IRH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6b-3v-I3O">
+                                <rect key="frame" x="70" y="199" width="30" height="36"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="C">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonPressedC:" destination="OC6-ML-PJd" eventType="touchUpInside" id="5Ek-xn-gFT"/>
+                                    <segue destination="giz-cX-dyq" kind="show" id="3ZR-z9-G3N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKN-SM-8jj">
+                                <rect key="frame" x="70" y="234" width="30" height="36"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="D">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonPressedD:" destination="OC6-ML-PJd" eventType="touchUpInside" id="Vhd-DP-H1q"/>
+                                    <segue destination="giz-cX-dyq" kind="show" id="sGG-ng-ENw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ew-Y4-wN2">
+                                <rect key="frame" x="70" y="269" width="30" height="36"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="E">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonPressedE:" destination="OC6-ML-PJd" eventType="touchUpInside" id="T8Z-Qr-6oD"/>
+                                    <segue destination="giz-cX-dyq" kind="show" id="gix-Ql-Dfj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QWs-0m-X5B">
+                                <rect key="frame" x="70" y="304" width="30" height="36"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="F">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonPressedF:" destination="OC6-ML-PJd" eventType="touchUpInside" id="KnF-P2-fnh"/>
+                                    <segue destination="giz-cX-dyq" kind="show" id="Z6a-Hi-uYe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3x-OD-prR">
+                                <rect key="frame" x="70" y="339" width="30" height="36"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="G">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonPressedG:" destination="OC6-ML-PJd" eventType="touchUpInside" id="6Eh-1p-yXZ"/>
+                                    <segue destination="giz-cX-dyq" kind="show" id="Vqj-c0-W3e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGx-Mc-LQ3">
+                                <rect key="frame" x="70" y="374" width="30" height="36"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="H">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonPressedH:" destination="OC6-ML-PJd" eventType="touchUpInside" id="bI1-cn-JYc"/>
+                                    <segue destination="giz-cX-dyq" kind="show" id="Uik-hd-3fT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wI3-fm-8nY">
+                                <rect key="frame" x="70" y="409" width="30" height="36"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="I">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonPressedI:" destination="OC6-ML-PJd" eventType="touchUpInside" id="CT9-Cj-xit"/>
+                                    <segue destination="giz-cX-dyq" kind="show" id="J3a-Ep-0dg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hG9-JP-5EN">
+                                <rect key="frame" x="70" y="444" width="30" height="36"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="J">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonPressedJ:" destination="OC6-ML-PJd" eventType="touchUpInside" id="7hu-5Z-mta"/>
+                                    <segue destination="giz-cX-dyq" kind="show" id="T31-sA-yaf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Q0-Dw-72X">
+                                <rect key="frame" x="70" y="479" width="30" height="36"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="K">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonPressedK:" destination="OC6-ML-PJd" eventType="touchUpInside" id="dAb-1M-HrX"/>
+                                    <segue destination="giz-cX-dyq" kind="show" id="Dym-KC-v9U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INU-Q5-1qk">
+                                <rect key="frame" x="70" y="514" width="30" height="36"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="L">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonPressedL:" destination="OC6-ML-PJd" eventType="touchUpInside" id="qtI-og-GTk"/>
+                                    <segue destination="giz-cX-dyq" kind="show" id="pv8-gr-iVJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vC7-Qt-WJb">
+                                <rect key="frame" x="70" y="549" width="30" height="36"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="M">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonPressedM:" destination="OC6-ML-PJd" eventType="touchUpInside" id="ED6-4Z-PlC"/>
+                                    <segue destination="giz-cX-dyq" kind="show" id="DYc-U8-iZC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GEr-Ad-Xjg">
+                                <rect key="frame" x="281" y="129" width="30" height="36"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="N">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonPressedN:" destination="OC6-ML-PJd" eventType="touchUpInside" id="grE-KN-Ju9"/>
+                                    <segue destination="giz-cX-dyq" kind="show" id="VGL-Sk-ADv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Tu-XA-d1H">
+                                <rect key="frame" x="281" y="164" width="30" height="36"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="O">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonPressedO:" destination="OC6-ML-PJd" eventType="touchUpInside" id="53i-f6-APH"/>
+                                    <segue destination="giz-cX-dyq" kind="show" id="mfS-7k-hb8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eh1-tO-cqK">
+                                <rect key="frame" x="281" y="199" width="30" height="36"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="P">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonPressedP:" destination="OC6-ML-PJd" eventType="touchUpInside" id="g6E-eG-WI6"/>
+                                    <segue destination="giz-cX-dyq" kind="show" id="R6X-WG-dvm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AN3-zN-CNZ">
+                                <rect key="frame" x="281" y="234" width="30" height="36"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="Q">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonPressedQ:" destination="OC6-ML-PJd" eventType="touchUpInside" id="XiX-Ki-8yV"/>
+                                    <segue destination="giz-cX-dyq" kind="show" id="Yhk-85-1up"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RzR-0q-STE">
+                                <rect key="frame" x="281" y="269" width="30" height="36"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="R">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonPressedR:" destination="OC6-ML-PJd" eventType="touchUpInside" id="NhS-Q3-saL"/>
+                                    <segue destination="giz-cX-dyq" kind="show" id="5SO-fu-5Kh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MM5-8S-o5G">
+                                <rect key="frame" x="281" y="304" width="30" height="36"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="S">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonPressedS:" destination="OC6-ML-PJd" eventType="touchUpInside" id="tIs-Ky-LRN"/>
+                                    <segue destination="giz-cX-dyq" kind="show" id="Tli-Rg-09K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vd-La-iz5">
+                                <rect key="frame" x="281" y="339" width="30" height="36"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="T">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonPressedT:" destination="OC6-ML-PJd" eventType="touchUpInside" id="TkR-YO-Lus"/>
+                                    <segue destination="giz-cX-dyq" kind="show" id="Nq4-Oo-psu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEO-R4-23d">
+                                <rect key="frame" x="281" y="374" width="30" height="36"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="U">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonPressedU:" destination="OC6-ML-PJd" eventType="touchUpInside" id="MfU-cw-fWB"/>
+                                    <segue destination="giz-cX-dyq" kind="show" id="22w-Bg-azX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOm-Rp-qJ6">
+                                <rect key="frame" x="281" y="444" width="30" height="36"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="W">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonPressedW:" destination="OC6-ML-PJd" eventType="touchUpInside" id="DHD-O3-wS3"/>
+                                    <segue destination="giz-cX-dyq" kind="show" id="Qjk-HD-Qbx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6V-0i-Qfq">
+                                <rect key="frame" x="281" y="409" width="30" height="36"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="V">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonPressedV:" destination="OC6-ML-PJd" eventType="touchUpInside" id="4jW-aZ-yC8"/>
+                                    <segue destination="giz-cX-dyq" kind="show" id="gGV-6E-WaP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4E1-8r-FqV">
+                                <rect key="frame" x="281" y="479" width="30" height="36"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonPressedX:" destination="OC6-ML-PJd" eventType="touchUpInside" id="6tK-kR-SKk"/>
+                                    <segue destination="giz-cX-dyq" kind="show" id="vbw-ZM-fQG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTL-nD-FcM">
+                                <rect key="frame" x="281" y="514" width="30" height="36"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="Y">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonPressedY:" destination="OC6-ML-PJd" eventType="touchUpInside" id="Usb-Ib-vPX"/>
+                                    <segue destination="giz-cX-dyq" kind="show" id="V8h-Nz-b3y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQM-dS-015">
+                                <rect key="frame" x="281" y="549" width="30" height="36"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="Z">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonPressedZ:" destination="OC6-ML-PJd" eventType="touchUpInside" id="Ao9-tP-NP7"/>
+                                    <segue destination="giz-cX-dyq" kind="show" id="RGF-2t-wve"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YiG-2g-yyq">
+                                <rect key="frame" x="152" y="606" width="71" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="21"/>
+                                <state key="normal" title="Restart!"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="lCR-lk-ns7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a Letter to Learn!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ucb-4d-XwW">
+                                <rect key="frame" x="28" y="20" width="319" height="36"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="INU-Q5-1qk" firstAttribute="centerX" secondItem="1vE-aa-TBX" secondAttribute="centerX" constant="-102.5" id="12I-Oo-N20"/>
+                            <constraint firstItem="E6V-0i-Qfq" firstAttribute="centerY" secondItem="1vE-aa-TBX" secondAttribute="centerY" constant="93.5" id="4Ff-tS-Zba"/>
+                            <constraint firstItem="E3x-OD-prR" firstAttribute="centerY" secondItem="1vE-aa-TBX" secondAttribute="centerY" constant="23.5" id="4wI-Ee-RSs"/>
+                            <constraint firstItem="u6b-3v-I3O" firstAttribute="centerY" secondItem="1vE-aa-TBX" secondAttribute="centerY" constant="-116.5" id="5YQ-yk-UVB"/>
+                            <constraint firstItem="AN3-zN-CNZ" firstAttribute="centerX" secondItem="1vE-aa-TBX" secondAttribute="centerX" constant="108.5" id="5hn-Za-ePD"/>
+                            <constraint firstItem="QWs-0m-X5B" firstAttribute="centerX" secondItem="1vE-aa-TBX" secondAttribute="centerX" constant="-102.5" id="6lT-sx-9lV"/>
+                            <constraint firstItem="Ucb-4d-XwW" firstAttribute="centerX" secondItem="1vE-aa-TBX" secondAttribute="centerX" id="6u6-Da-AXc"/>
+                            <constraint firstItem="6Tu-XA-d1H" firstAttribute="centerY" secondItem="1vE-aa-TBX" secondAttribute="centerY" constant="-151.5" id="7P4-fS-KTw"/>
+                            <constraint firstItem="nVN-cW-yzP" firstAttribute="centerY" secondItem="1vE-aa-TBX" secondAttribute="centerY" constant="-151.5" id="7iv-Pc-6qp"/>
+                            <constraint firstItem="u6b-3v-I3O" firstAttribute="centerX" secondItem="1vE-aa-TBX" secondAttribute="centerX" constant="-102.5" id="8y0-GM-J18"/>
+                            <constraint firstItem="INU-Q5-1qk" firstAttribute="centerY" secondItem="1vE-aa-TBX" secondAttribute="centerY" constant="198.5" id="Agu-J6-35J"/>
+                            <constraint firstItem="AN3-zN-CNZ" firstAttribute="centerY" secondItem="1vE-aa-TBX" secondAttribute="centerY" constant="-81.5" id="DKA-GA-DYU"/>
+                            <constraint firstItem="nVN-cW-yzP" firstAttribute="centerX" secondItem="1vE-aa-TBX" secondAttribute="centerX" constant="-102.5" id="Dqm-eu-EGx"/>
+                            <constraint firstItem="hG9-JP-5EN" firstAttribute="centerX" secondItem="1vE-aa-TBX" secondAttribute="centerX" constant="-102.5" id="F7q-d0-wiQ"/>
+                            <constraint firstItem="RzR-0q-STE" firstAttribute="centerX" secondItem="1vE-aa-TBX" secondAttribute="centerX" constant="108.5" id="GMA-rG-yTZ"/>
+                            <constraint firstItem="SOX-TB-cUG" firstAttribute="centerX" secondItem="1vE-aa-TBX" secondAttribute="centerX" constant="-102.5" id="GU0-89-DVA"/>
+                            <constraint firstItem="cOm-Rp-qJ6" firstAttribute="centerX" secondItem="1vE-aa-TBX" secondAttribute="centerX" constant="108.5" id="HLf-cb-lTB"/>
+                            <constraint firstItem="GEr-Ad-Xjg" firstAttribute="centerY" secondItem="1vE-aa-TBX" secondAttribute="centerY" constant="-186.5" id="HPb-nZ-4K7"/>
+                            <constraint firstItem="MM5-8S-o5G" firstAttribute="centerY" secondItem="1vE-aa-TBX" secondAttribute="centerY" constant="-11.5" id="ICE-VS-8G4"/>
+                            <constraint firstItem="4E1-8r-FqV" firstAttribute="centerX" secondItem="1vE-aa-TBX" secondAttribute="centerX" constant="108.5" id="IJv-jx-nzs"/>
+                            <constraint firstItem="E6V-0i-Qfq" firstAttribute="centerX" secondItem="1vE-aa-TBX" secondAttribute="centerX" constant="108.5" id="KQ0-lj-3ii"/>
+                            <constraint firstItem="6Q0-Dw-72X" firstAttribute="centerY" secondItem="1vE-aa-TBX" secondAttribute="centerY" constant="163.5" id="PHe-mD-XUb"/>
+                            <constraint firstItem="Eh1-tO-cqK" firstAttribute="centerX" secondItem="1vE-aa-TBX" secondAttribute="centerX" constant="108.5" id="PXx-Rd-jV6"/>
+                            <constraint firstItem="6vd-La-iz5" firstAttribute="centerX" secondItem="1vE-aa-TBX" secondAttribute="centerX" constant="108.5" id="QhV-V3-Sws"/>
+                            <constraint firstItem="E3x-OD-prR" firstAttribute="centerX" secondItem="1vE-aa-TBX" secondAttribute="centerX" constant="-102.5" id="RN4-xs-pyr"/>
+                            <constraint firstItem="Eh1-tO-cqK" firstAttribute="centerY" secondItem="1vE-aa-TBX" secondAttribute="centerY" constant="-116.5" id="TEl-DS-c0n"/>
+                            <constraint firstItem="Ucb-4d-XwW" firstAttribute="centerY" secondItem="1vE-aa-TBX" secondAttribute="centerY" constant="-295" id="TtW-01-Nnt"/>
+                            <constraint firstItem="VKN-SM-8jj" firstAttribute="centerY" secondItem="1vE-aa-TBX" secondAttribute="centerY" constant="-81.5" id="Uqr-Ip-iAB"/>
+                            <constraint firstItem="4E1-8r-FqV" firstAttribute="centerY" secondItem="1vE-aa-TBX" secondAttribute="centerY" constant="163.5" id="UwH-3b-ErB"/>
+                            <constraint firstItem="vC7-Qt-WJb" firstAttribute="centerX" secondItem="1vE-aa-TBX" secondAttribute="centerX" constant="-102.5" id="VJk-So-QOF"/>
+                            <constraint firstItem="wI3-fm-8nY" firstAttribute="centerY" secondItem="1vE-aa-TBX" secondAttribute="centerY" constant="93.5" id="VRc-JF-ogF"/>
+                            <constraint firstItem="6ew-Y4-wN2" firstAttribute="centerX" secondItem="1vE-aa-TBX" secondAttribute="centerX" constant="-102.5" id="WG4-MT-bLf"/>
+                            <constraint firstItem="hG9-JP-5EN" firstAttribute="centerY" secondItem="1vE-aa-TBX" secondAttribute="centerY" constant="128.5" id="Y98-If-QiO"/>
+                            <constraint firstItem="cOm-Rp-qJ6" firstAttribute="centerY" secondItem="1vE-aa-TBX" secondAttribute="centerY" constant="128.5" id="aWF-xD-LFQ"/>
+                            <constraint firstItem="sGx-Mc-LQ3" firstAttribute="centerX" secondItem="1vE-aa-TBX" secondAttribute="centerX" constant="-102.5" id="am3-5u-MBW"/>
+                            <constraint firstItem="gTL-nD-FcM" firstAttribute="centerY" secondItem="1vE-aa-TBX" secondAttribute="centerY" constant="198.5" id="bBl-RL-naj"/>
+                            <constraint firstItem="VKN-SM-8jj" firstAttribute="centerX" secondItem="1vE-aa-TBX" secondAttribute="centerX" constant="-102.5" id="d5D-ln-OoD"/>
+                            <constraint firstItem="sGx-Mc-LQ3" firstAttribute="centerY" secondItem="1vE-aa-TBX" secondAttribute="centerY" constant="58.5" id="fhW-Lj-rOa"/>
+                            <constraint firstItem="6vd-La-iz5" firstAttribute="centerY" secondItem="1vE-aa-TBX" secondAttribute="centerY" constant="23.5" id="fmC-Ep-hRU"/>
+                            <constraint firstItem="MM5-8S-o5G" firstAttribute="centerX" secondItem="1vE-aa-TBX" secondAttribute="centerX" constant="108.5" id="gD6-Yy-odW"/>
+                            <constraint firstItem="GEr-Ad-Xjg" firstAttribute="centerX" secondItem="1vE-aa-TBX" secondAttribute="centerX" constant="108.5" id="i9X-XS-L8n"/>
+                            <constraint firstItem="xQM-dS-015" firstAttribute="centerY" secondItem="1vE-aa-TBX" secondAttribute="centerY" constant="233.5" id="nFU-u7-A8z"/>
+                            <constraint firstItem="6ew-Y4-wN2" firstAttribute="centerY" secondItem="1vE-aa-TBX" secondAttribute="centerY" constant="-46.5" id="nni-vI-yrM"/>
+                            <constraint firstItem="SOX-TB-cUG" firstAttribute="centerY" secondItem="1vE-aa-TBX" secondAttribute="centerY" constant="-186.5" id="pZ0-gc-9US"/>
+                            <constraint firstItem="6Q0-Dw-72X" firstAttribute="centerX" secondItem="1vE-aa-TBX" secondAttribute="centerX" constant="-102.5" id="r4P-2g-uDI"/>
+                            <constraint firstItem="zEO-R4-23d" firstAttribute="centerY" secondItem="1vE-aa-TBX" secondAttribute="centerY" constant="58.5" id="rXF-PS-YE2"/>
+                            <constraint firstItem="zEO-R4-23d" firstAttribute="centerX" secondItem="1vE-aa-TBX" secondAttribute="centerX" constant="108.5" id="rnn-BQ-Q5k"/>
+                            <constraint firstItem="wI3-fm-8nY" firstAttribute="centerX" secondItem="1vE-aa-TBX" secondAttribute="centerX" constant="-102.5" id="snL-u4-4V4"/>
+                            <constraint firstItem="QWs-0m-X5B" firstAttribute="centerY" secondItem="1vE-aa-TBX" secondAttribute="centerY" constant="-11.5" id="tCn-Pc-JT1"/>
+                            <constraint firstItem="vC7-Qt-WJb" firstAttribute="centerY" secondItem="1vE-aa-TBX" secondAttribute="centerY" constant="233.5" id="ts8-3x-hZy"/>
+                            <constraint firstItem="RzR-0q-STE" firstAttribute="centerY" secondItem="1vE-aa-TBX" secondAttribute="centerY" constant="-46.5" id="u2T-qj-r5V"/>
+                            <constraint firstItem="gTL-nD-FcM" firstAttribute="centerX" secondItem="1vE-aa-TBX" secondAttribute="centerX" constant="108.5" id="vtf-B6-uAx"/>
+                            <constraint firstItem="6Tu-XA-d1H" firstAttribute="centerX" secondItem="1vE-aa-TBX" secondAttribute="centerX" constant="108.5" id="wvR-zx-EWj"/>
+                            <constraint firstItem="xQM-dS-015" firstAttribute="centerX" secondItem="1vE-aa-TBX" secondAttribute="centerX" constant="108.5" id="xnQ-oc-uEu"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o0G-sP-h7w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="576.79999999999995" y="138.98050974512745"/>
+        </scene>
+        <!--Information View-->
+        <scene sceneID="FWb-rK-ulF">
+            <objects>
+                <viewController id="giz-cX-dyq" customClass="informationView" customModule="Colour_Swap" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Aux-c3-QVy"/>
+                        <viewControllerLayoutGuide type="bottom" id="kDJ-xF-wyV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SF2-uX-5mw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Digital-background" translatesAutoresizingMaskIntoConstraints="NO" id="t0S-hy-1ch">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfk-rz-crT">
+                                <rect key="frame" x="153" y="412" width="69" height="36"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="Example"/>
+                                <connections>
+                                    <action selector="onExampleTapped:" destination="giz-cX-dyq" eventType="touchUpInside" id="lgQ-Dl-VEC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ul-7X-HDg">
+                                <rect key="frame" x="158.5" y="611.5" width="58" height="41"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="21"/>
+                                <state key="normal" title="Done!"/>
+                                <connections>
+                                    <segue destination="OC6-ML-PJd" kind="show" id="imx-W0-v45"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Letter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAZ-5W-SmL">
+                                <rect key="frame" x="71.5" y="238" width="232.5" height="110"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="80"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Letter Sentence" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="slN-8n-T86">
+                                <rect key="frame" x="53" y="356" width="269" height="26"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="t0S-hy-1ch" secondAttribute="trailing" constant="-16" id="1YT-kk-7Pi"/>
+                            <constraint firstItem="t0S-hy-1ch" firstAttribute="top" secondItem="SF2-uX-5mw" secondAttribute="topMargin" id="4Ri-51-6hX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OAZ-5W-SmL" secondAttribute="trailing" constant="55" id="4UR-pK-nSC"/>
+                            <constraint firstItem="vfk-rz-crT" firstAttribute="leading" secondItem="SF2-uX-5mw" secondAttribute="leadingMargin" constant="137" id="7H6-hd-CLB"/>
+                            <constraint firstItem="vfk-rz-crT" firstAttribute="top" secondItem="slN-8n-T86" secondAttribute="bottom" constant="30" id="8hn-SQ-Nxt"/>
+                            <constraint firstItem="kDJ-xF-wyV" firstAttribute="top" secondItem="t0S-hy-1ch" secondAttribute="bottom" id="DZc-S5-qE4"/>
+                            <constraint firstItem="slN-8n-T86" firstAttribute="centerY" secondItem="SF2-uX-5mw" secondAttribute="centerY" constant="35.5" id="NWz-G7-EuV"/>
+                            <constraint firstItem="2Ul-7X-HDg" firstAttribute="centerY" secondItem="SF2-uX-5mw" secondAttribute="centerY" constant="298.5" id="NYv-3D-3so"/>
+                            <constraint firstItem="OAZ-5W-SmL" firstAttribute="leading" secondItem="SF2-uX-5mw" secondAttribute="leadingMargin" constant="55.5" id="ObM-3i-h58"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2Ul-7X-HDg" secondAttribute="trailing" constant="142.5" id="OgX-52-sic"/>
+                            <constraint firstItem="t0S-hy-1ch" firstAttribute="centerY" secondItem="SF2-uX-5mw" secondAttribute="centerY" id="RGc-Zd-EPS"/>
+                            <constraint firstItem="slN-8n-T86" firstAttribute="centerX" secondItem="SF2-uX-5mw" secondAttribute="centerX" id="So9-xI-Khw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="slN-8n-T86" secondAttribute="trailing" constant="37" id="Tov-lm-fAD"/>
+                            <constraint firstItem="vfk-rz-crT" firstAttribute="centerY" secondItem="SF2-uX-5mw" secondAttribute="centerY" constant="96.5" id="ViS-yg-wsX"/>
+                            <constraint firstItem="2Ul-7X-HDg" firstAttribute="top" secondItem="vfk-rz-crT" secondAttribute="bottom" constant="163.5" id="XQo-T4-eEv"/>
+                            <constraint firstItem="slN-8n-T86" firstAttribute="top" secondItem="OAZ-5W-SmL" secondAttribute="bottom" constant="8" id="Xbx-KW-VSJ"/>
+                            <constraint firstItem="vfk-rz-crT" firstAttribute="centerX" secondItem="SF2-uX-5mw" secondAttribute="centerX" id="bDg-sf-xaY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vfk-rz-crT" secondAttribute="trailing" constant="137" id="c7B-Hy-1Dz"/>
+                            <constraint firstItem="OAZ-5W-SmL" firstAttribute="centerY" secondItem="SF2-uX-5mw" secondAttribute="centerY" constant="-40.5" id="cPg-o5-iMc"/>
+                            <constraint firstItem="OAZ-5W-SmL" firstAttribute="top" secondItem="Aux-c3-QVy" secondAttribute="bottom" constant="218" id="iLP-X7-Ry4"/>
+                            <constraint firstItem="t0S-hy-1ch" firstAttribute="leading" secondItem="SF2-uX-5mw" secondAttribute="leadingMargin" constant="-16" id="kB4-q9-IGc"/>
+                            <constraint firstItem="t0S-hy-1ch" firstAttribute="centerX" secondItem="SF2-uX-5mw" secondAttribute="centerX" id="l3B-NR-1V7"/>
+                            <constraint firstItem="kDJ-xF-wyV" firstAttribute="top" secondItem="2Ul-7X-HDg" secondAttribute="bottom" constant="14.5" id="lya-sj-RcB"/>
+                            <constraint firstItem="2Ul-7X-HDg" firstAttribute="leading" secondItem="SF2-uX-5mw" secondAttribute="leadingMargin" constant="142.5" id="v7W-7m-X08"/>
+                            <constraint firstItem="OAZ-5W-SmL" firstAttribute="centerX" secondItem="SF2-uX-5mw" secondAttribute="centerX" id="vie-9V-R9y"/>
+                            <constraint firstItem="slN-8n-T86" firstAttribute="leading" secondItem="SF2-uX-5mw" secondAttribute="leadingMargin" constant="37" id="w4V-x9-f4S"/>
+                            <constraint firstItem="2Ul-7X-HDg" firstAttribute="centerX" secondItem="SF2-uX-5mw" secondAttribute="centerX" id="wl1-g3-wob"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="exampleSentenceLabel" destination="slN-8n-T86" id="afh-sf-5Nt"/>
+                        <outlet property="letterChosenLabel" destination="OAZ-5W-SmL" id="9um-aY-9MC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZHw-t7-KWG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1312.8" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Digital-background" width="425" height="282"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="imx-W0-v45"/>
+        <segue reference="vbw-ZM-fQG"/>
+    </inferredMetricsTieBreakers>
+</document>
